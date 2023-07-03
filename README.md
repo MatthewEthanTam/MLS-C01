@@ -47,4 +47,8 @@ AWS Machine learning notes
 
 - `S3 Glacier Instant Retrieval` - availability: `99.99%`, durability: `11 9's`, latency: `milliseconds`, availability SLA: `99.9%`, replicated across: `3` `AZ's`, minimum storage duration: `90 days` . (Data archived and requires retrieval within `1 minute`.)
 
-- `S3 Glacier Flexible Retrieval` - availability: `99.99%`, durability: `11 9's`, latency: `milliseconds`, availability SLA: `99.9%`, replicated across: `3` `AZ's`, minimum storage duration: `90 days`. (Data archived and requires retrieval within `1-12 hours`.)
+- `S3 Glacier Flexible Retrieval` - availability: `99.99%`, durability: `11 9's`, latency: `milliseconds`, availability SLA: `99.9%`, replicated across: `3` `AZ's`, minimum storage duration: `90 days`. (Data archived and requires retrieval within Expidited (1-5 minutes), Standard (3-5 hour), and Bulk (5-12 hours).)
+
+- `S3 Glacier Deep Archive` - availability: `99.99%`, durability: `11 9's`, latency: `milliseconds`, availability SLA: `99.9%`, replicated across: `3` `AZ's`, minimum storage duration: `180 days`. (Data archived and requires retrieval within `12 hours` (Standard) and `48 hours` (Bulk).)
+
+- `S3 Intelligent Tiering` - availability: `99.9%`, durability: `11 9's`, latency: `milliseconds`, availability SLA: `99%`, replicated across: `3` `AZ's`. (Data that has unknown or changing access patterns. Monthly monitoring fee and auto-tiering fee)
